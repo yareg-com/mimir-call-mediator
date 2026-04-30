@@ -1,0 +1,18 @@
+# Build artifacts
+/target
+
+# Mediator identity key — generated at runtime, never commit
+call_mediator.key
+*.key
+
+# IDE / editor
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs and crash reports
+*.log

@@ -1,0 +1,24 @@
+[package]
+name = "mimir-call-mediator"
+version = "0.1.0"
+edition = "2024"
+authors = ["Revertron"]
+description = "Group audio call mediator (SFU/MCU) over ygg_stream"
+license = "MPL-2.0"
+readme = "README.md"
+repository = "https://github.com/Mimir-IM/call-mediator"
+homepage = "https://github.com/Mimir-IM/call-mediator"
+keywords = ["yggdrasil", "sfu", "voip", "mediator", "mimir"]
+categories = ["network-programming", "multimedia::audio"]
+
+[dependencies]
+ygg_stream = { git = "https://github.com/Revertron/ygg_stream", tag = "v0.2.5" }
+tokio = { version = "1", features = ["full"] }
+tokio-util = { version = "0.7", features = ["rt"] }
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+rand = "0.8"
+getopts = "0.2"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+thiserror = "2"
+hex = "0.4"
