@@ -20,7 +20,7 @@ FROM alpine:3.23.4
 ENV APP=mimir-call-mediator
 ENV DATA_PATH=/var/lib/$APP
 
-RUN apk --no-cache add curl tini && \
+RUN apk --no-cache add curl && \
     adduser --disabled-password --gecos '' $APP && \
     mkdir -p $DATA_PATH && chown -R $APP $DATA_PATH
 
