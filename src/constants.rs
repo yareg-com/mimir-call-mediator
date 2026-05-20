@@ -6,7 +6,7 @@ pub const VERSION: u8 = 1;
 pub const SERVER_PORT: u16 = 70;
 
 // Key file for the mediator's Ed25519 identity key
-pub const KEY_FILE: &str = "call_mediator.key";
+pub const KEY_FILE: &str = "/var/lib/mimir-call-mediator/generated.key";
 
 // Control-plane command codes (reliable stream)
 pub const CMD_HELLO: u8 = 0x01;          // client → server: version probe
